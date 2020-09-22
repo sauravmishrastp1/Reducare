@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CourseProvide">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="48dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/backMyOrders"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/backpress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textview"
+            android:layout_height="match_parent"
+            android:text="Course"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="56dp"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:fontFamily="@font/maven_pro_medium"
+            android:textColor="#FFF"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/providcourcerecycle"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/prograssbar"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/buybtnview"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/maven_pro"
+            android:textColor="@android:color/black"
+            android:text="Data Not Available!!"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

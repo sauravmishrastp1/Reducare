@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberSphiPlan">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="48dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/backMyOrders"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/backpress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="GTC MEMBERSHIP APPLICATION FORM"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="56dp"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:fontFamily="@font/maven_pro_medium"
+            android:textColor="#FFF"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollview"
+        android:layout_above="@id/membershipbtn"
+        android:layout_below="@id/toolbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+       android:orientation="vertical"
+        android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Basic Information"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/name_et"
+            android:hint="Name"
+            android:fontFamily="@font/maven_pro"
+            android:layout_height="45dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/father_name_et"
+            android:layout_height="45dp"
+            android:fontFamily="@font/maven_pro"
+            android:hint="Father Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/school_et"
+            android:hint="School"
+            android:fontFamily="@font/maven_pro"
+            android:layout_height="45dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/contact_name_et"
+            android:hint="Contact No"
+            android:inputType="number"
+            android:fontFamily="@font/maven_pro"
+            android:layout_height="45dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spiner"
+                android:layout_marginStart="10dp"
+                android:hint="Class"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_background"
+                android:layout_marginEnd="10dp"
+                android:layout_height="45dp">
+
+            </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/maven_pro"
+        android:textColor="@color/colorPrimary"
+        android:text="Choose Your Membership"
+        android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="#000"
+                android:text="Group-A Individual Subject P/C/M/B"
+                android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/feestA"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:textSize="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/button_background"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:text="Fees"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="#FCFBFA"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#E0DDDD"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/membershipcourcerecy"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/groupafee"
+                android:background="#F8F7F7"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:textColor="#000"
+                android:fontFamily="@font/maven_pro"
+                android:text="Group-B NEET/JEE MAIN/IIT Advance"
+                android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="Fees"
+                    android:textSize="12dp"
+                    android:background="@drawable/button_background"
+                    android:id="@+id/fee1"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="35dp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#E0DDDD"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/gruupa"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/groupafee2"
+                android:background="#F8F7F7"
+                android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                 android:textSize="12dp"
+                 android:textColor="#000"
+                android:fontFamily="@font/maven_pro"
+                android:text="Group-C Special Prepration"
+                android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:textSize="12dp"
+        android:layout_alignParentEnd="true"
+        android:text="Fees"
+        android:background="@drawable/button_background"
+        android:id="@+id/fee2"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"/>
+</RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#E0DDDD"
+                android:layout_marginEnd="10dp"
+                android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/groupb"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/groupafee3"
+                android:background="#F8F7F7"
+                android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:textColor="#000"
+                android:fontFamily="@font/maven_pro"
+                android:text="Group-D Board prepration"
+                android:layout_height="wrap_content" />
+<Button
+    android:layout_width="70dp"
+    android:layout_height="35dp"
+    android:textSize="12dp"
+android:layout_alignParentEnd="true"
+android:text="Fees"
+    android:background="@drawable/button_background"
+    android:id="@+id/fee3"
+    android:textColor="#FFFFFE"
+android:fontFamily="@font/maven_pro"
+android:layout_alignParentBottom="true"
+android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#E0DDDD"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/groupd"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/groupafee4"
+                android:background="#F8F7F7"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:textColor="#000"
+                android:fontFamily="@font/maven_pro"
+                android:text="Group-E Free/90% Scholarship"
+                android:layout_height="wrap_content" />
+<Button
+    android:layout_width="70dp"
+    android:layout_height="35dp"
+    android:textSize="12dp"
+android:layout_alignParentEnd="true"
+android:text="Fees"
+    android:visibility="gone"
+    android:id="@+id/fee4"
+    android:background="@drawable/button_background"
+    android:textColor="#FDFDFD"
+android:fontFamily="@font/maven_pro"
+android:layout_alignParentBottom="true"
+android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#E0DDDD"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/groupe"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/groupafee5"
+                android:background="#F8F7F7"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="#747474"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:id="@+id/textview12"
+                   android:text="Upload Photo and Signature"
+                   android:textSize="16dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_centerHorizontal="true"
+                   android:fontFamily="@font/maven_pro"
+
+                   android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/uploadimglayout"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/textview12"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Select Image"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="wrap_content">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:src="@drawable/profileimageicon"
+                            android:layout_marginEnd="10dp"
+                            android:id="@+id/uploadPhoto"
+                            android:layout_height="100dp" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:text="Upload"
+                            android:id="@+id/uploadPhoto_btn"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/button_background"
+                            android:layout_height="30dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/view"
+                    android:layout_below="@id/uploadimglayout"
+                    android:background="#838282"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="1dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/signautre"
+                    android:layout_below="@id/view"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Select Signature"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="wrap_content">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+
+                        android:src="@drawable/singnature"
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/uploadsigncapture"
+                        android:layout_height="100dp" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:text="Upload"
+                            android:id="@+id/uploadSignature_btn"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/button_background"
+                            android:layout_height="30dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/membershipbtn"
+        android:text="Apply"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

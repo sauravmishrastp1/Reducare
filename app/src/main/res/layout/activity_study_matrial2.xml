@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StudyMatrialActivity2">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="48dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/backMyOrders"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/backpress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Topic"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="56dp"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:fontFamily="@font/maven_pro_medium"
+            android:textColor="#FFF"/>
+
+    </androidx.cardview.widget.CardView>
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null">
+
+    </ExpandableListView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/buybtnview"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/maven_pro"
+            android:textColor="@android:color/black"
+            android:text="Data Not Available!!"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

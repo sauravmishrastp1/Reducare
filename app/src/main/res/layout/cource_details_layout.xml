@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:elevation="8dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/created"
+                android:text="Created by Sasikumar Asarantnam"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/marooncolor"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/created"/>
+
+            <ImageView
+                android:layout_width="85dp"
+                android:id="@+id/image"
+                android:layout_height="85dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/view"
+                app:srcCompat="@drawable/atoozlogo"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/creaternametv"
+                android:text="Sasikumar Asarantnam"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/created"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/maven_pro"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/createremail"
+                android:text="arasarthan@gmail.com"
+                android:textSize="14sp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/creaternametv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/viewprofile"
+                android:text="VIEW PROFILE"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#F44336"
+                android:layout_below="@id/image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

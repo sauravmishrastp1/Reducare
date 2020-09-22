@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DoutSection">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        app:titleTextColor="#fff"
+        app:navigationIcon="?homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/layot"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/search"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/cardviewseach"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@+id/linearlayout"
+                app:cardCornerRadius="7dp"
+                app:cardBackgroundColor="#DFDEDE"
+                app:cardElevation="4dp"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:id="@+id/iconSearch"
+                    android:layout_width="36dp"
+                    android:visibility="gone"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    app:srcCompat="@drawable/search"
+                    android:padding="6dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/colorPrimary"/>
+
+                <EditText
+                    android:id="@+id/search_eT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="16dp"
+                    android:textColor="#000"
+                    android:textColorHint="#BBBABA"
+                    android:background="@color/transparent"
+                    android:hint="Search Your Doubt"
+                    android:fontFamily="@font/maven_pro"
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/linearLayout"
+                    android:layout_gravity="end"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Or"
+                        android:id="@+id/textviewor"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        android:fontFamily="@font/maven_pro"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/doutcameraa"
+                        android:layout_toRightOf="@id/search"
+                        android:layout_gravity="end"
+                        android:foregroundGravity="clip_vertical"
+                        android:src="@drawable/doutcamera"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/searchicon"
+                        android:layout_toRightOf="@id/search"
+                        android:layout_gravity="end"
+                        android:foregroundGravity="clip_vertical"
+                        android:src="@drawable/searchhhhh"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/cardview"
+            android:layout_below="@id/search"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="3dp"
+
+
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/scanviewlayout"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/cropedimg"
+                    android:onClick="getimage"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/qq"
+                    android:layout_height="80dp"
+                    tools:ignore="OnClick" />
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/sacnview"
+                    android:visibility="gone"
+                    android:background="#C4C3C3"
+                    android:layout_height="3dp">
+
+                </View>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/searchhhhh"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/imageviewsearch"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycelrview"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/cardview"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_below="@id/layot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        android:pointerIcon="arrow"
+        app:tabTextColor="#070707"
+        android:background="#F1F1F1">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager"
+
+        android:layout_below="@id/tabLayout"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="60dp"
+        android:id="@+id/whatsapp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/whatsappimg"
+        android:layout_height="60dp">
+
+    </ImageView>
+</RelativeLayout>

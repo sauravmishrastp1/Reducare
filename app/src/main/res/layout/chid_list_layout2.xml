@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:id="@+id/imageview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrorrrr"
+        android:layout_height="20dp" />
+    <TextView
+        android:id="@+id/lblListItem"
+         android:textSize="13dp"
+        android:layout_margin="6dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/maven_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layou2"
+        android:layout_below="@id/layout"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:id="@+id/imageview2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pdf"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/lblListItem2"
+            android:textSize="13dp"
+            android:layout_margin="6dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/maven_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+    </RelativeLayout>
+</RelativeLayout>

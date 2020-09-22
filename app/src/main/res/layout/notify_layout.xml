@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    android:elevation="8dp"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="70dp">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:id="@+id/bell_icon"
+           android:layout_centerVertical="true"
+           android:src="@drawable/inerr_notification"
+           android:layout_height="wrap_content">
+
+       </ImageView>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_toRightOf="@id/bell_icon"
+           android:layout_centerVertical="true"
+           android:orientation="vertical"
+           android:layout_marginStart="10dp"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/maingheading"
+               android:text="NEET"
+               android:textSize="15dp"
+               android:fontFamily="@font/maven_pro"
+               android:textColor="#000"
+               android:textStyle="bold"
+               android:layout_height="wrap_content">
+
+           </TextView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/dicsrip"
+               android:singleLine="true"
+               android:text="1.Study Material 2. Video 3.Online test 4.Assignments 5.Practice test Duration - 50 to 60 Days"
+               android:layout_height="wrap_content">
+
+           </TextView>
+
+       </LinearLayout>
+   </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

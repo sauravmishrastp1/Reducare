@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SubjectPdfNotes">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/maven_pro"
+                android:text="Raushan Edu Care (REC) Membership"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="At REC, we are on a mission to provide the best coaching, resources, and teaching to all the students. For students who are facing issues or any problems in studying or are not good enough with any particular subject, we have created this membership program." />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="A brief about the REC Membership"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="REC Membership is based on the concept of an A2Z Edu Care, where our experienced teachers take care of every aspect of the studies a student may need. It includes coaching for 12th board, preparation for IIT-JEE and NEET, improving the command over specific subjects, etc.
+Once a student gets REC Membership, we provide him/her a Target Card. In this Target Card, the students set a target for themselves and then our teachers start working hard on the students to help them achieve their individual target. For example, the students who want to score higher in 12th board exams can set a target of scoring 90%, a NEET aspirant can set a target of MBBS selection the next year, etc.
+Along with the Target Card, the students also get a Certificate of Course Completion. The REC membership is applicable for the students from class 6th and 12th who needs an A2Z care in education. Additional and specific attention is provided to the students who are a part of this membership
+" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="A2Z Edu Care by REC"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Here are a few key points to know about REC Membership:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="1.This membership is for the students who are not able to find a balance between coaching and school studies. " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="2.It is a great solution for the students who are not able to understand the concepts taught in school or coaching. " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="3.We provide a guarantee card along with the membership target card, showing our commitment to the students. No other institute or coaching center provides any guarantee card." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="4.REC Membership is a must-have asset for the students who are feeling demotivated because of being average at studies." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="5.This membership is also meant for the students who are not able to make progress or score higher in unit tests and examinations conducted within schools. " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="6.For the students who are not able to prepare well for their 12th board examinations because of focus on IIT-JEE or NEET preparations, REC membership is the solution." />
+
+        </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Here are a few key points to know about REC Membership:"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="To get the REC Membership, the students have to go through an easy process, as mentioned below:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="1.Apply for the membership." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="2.A test is conducted which is related to the selected " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="3.A test is conducted which is related to the selected topic " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="4.Based on student’s performance, the membership is credited. " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="5.Target Card and Membership ID are provided to the student" />
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Membership Fee and Concession"
+                android:textColor="#000"
+                android:textSize="18dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="1.The membership fee is applicable only if the student becomes a member of this program. No fee is charged for applying and appearing for Select a topic of your choice and take demo classes.
+the test.We have three formats for fee payment— monthly, quarterly, and annually. Along with these, we also provide scholarship and free membership to the brilliant students, and the ones falling under SC/ST/BPL categories.
+Below is the fee structurefor the students who gain the REC Membership:
+" />
+            </androidx.cardview.widget.CardView>
+         <TextView
+             android:layout_width="wrap_content"
+             android:text="1.Monthly"
+             android:textSize="18dp"
+             android:fontFamily="@font/maven_pro"
+             android:layout_margin="10dp"
+             android:textColor="#000"
+             android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Student can pay fees on monthly basis."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="2.Quarterly"
+                android:textSize="18dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="To be paid on a quarterly basis. We will give a 30% Concession of total fees for the students ."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="3.Annually"
+                android:textSize="18dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="To be paid once in a year. We gave up to 80% refund policy for the students who opt for the annual subscription and fail to achieve the set target. "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="4.FREE/Scholarship"
+                android:textSize="18dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="The students with a super excellent performance and the ones falling under SC/ST/BPL categories get the REC membership either completely free or get up to 90% scholarship of the total fees"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="REC Membership Categories"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CAT A:"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Students who choose to prepare for an individual subject, like Physics, Chemistry, Biology and Mathematics, fall under CAT A."
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CAT B:"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="In this category, we categorize the students who have set their target for NEET, JEE-MAIN, or IIT Advance."
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CAT C:"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CAT C is meant for the students who are looking for special preparation, including NDA, SCRA, KVPY, NTSE, IJSO, NSEP, RMO, etc. "
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CAT D:"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="The students who want to work hard and score high in their board examinations fall under CAT D."
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CAT E:"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="This is a special and privileged category for the students who are eligible for scholarship, free courses. Those are belonging to BPL/SC/ST categories.
+
+"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

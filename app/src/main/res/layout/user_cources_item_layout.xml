@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:background="@drawable/dashboardcard_background"
+    android:elevation="4dp"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:id="@+id/dashboardrel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <TextView
+            android:id="@+id/coursename"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/maven_pro"
+            android:text="N/A"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dash_img"
+            android:layout_below="@id/simpleSwitch"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:alpha="0.5"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/atoozlogo"
+             />
+
+        <Switch
+            android:id="@+id/simpleSwitch"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:id="@+id/pricelinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:layout_below="@+id/coursename">
+
+
+        <TextView
+            android:id="@+id/coursepricee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/maven_pro"
+            android:text="N/A"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="Price"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/pricelinear"
+            android:layout_below="@+id/coursename">
+
+
+            <TextView
+                android:id="@+id/totalvideocount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="N/A"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="Videos"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editcourseview"
+            android:layout_below="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/editicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_mode_edit_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="Edit Your Course"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/moreinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Info"
+            android:layout_below="@id/divider"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:layout_marginRight="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/maven_pro"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/moreinfo"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/divider"
+            android:layout_marginRight="8dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

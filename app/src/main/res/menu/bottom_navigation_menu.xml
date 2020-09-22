@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/course"
+        android:icon="@drawable/ic_camera_alt_black_24dp"
+        android:title="Doubt">
+
+    </item>
+    <item
+        android:id="@+id/whishlist"
+        android:icon="@drawable/ic_query_builder_black_24dp"
+        android:title="GTC"
+        ></item>
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/account"
+        android:title="Profile"
+        />
+
+
+
+</menu>

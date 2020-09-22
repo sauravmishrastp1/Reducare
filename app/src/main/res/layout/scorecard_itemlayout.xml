@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        android:elevation="8dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/rank"
+                android:layout_centerVertical="true"
+                android:id="@+id/iamge_view"
+                android:layout_height="30dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/marks"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/iamge_view"
+                android:text="ad"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/heading"
+                android:textColor="#000"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/marks"
+                android:layout_toRightOf="@id/iamge_view"
+                android:text="ad"
+                android:scrollIndicators="end"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

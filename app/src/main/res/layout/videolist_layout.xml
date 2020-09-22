@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/rectangle_backgroung">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+
+    <TextView
+        android:id="@+id/videolistheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content List"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        />
+
+        <ImageView
+            android:id="@+id/expandbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/marooncolor"
+            android:tint="@color/marooncolor"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_add_black_24dp"/>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/rel"
+        android:layout_width="match_parent"
+        android:background="@color/marooncolor"
+        android:layout_height="1dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/videolistrecycler"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/videolistprogressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

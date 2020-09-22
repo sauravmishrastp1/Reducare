@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="48dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/backMyOrders"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/backpress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="About Us"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="56dp"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:fontFamily="@font/maven_pro_medium"
+            android:textColor="#FFF"/>
+
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="About Us"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/maven_pro"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="
+Raushan Edu Care (REC) is one of the best coaching institutes in Jaipur for IIT-JEE and NEET. Founded by the veteran teacher Mr. Raushan Kumar who has over 20 years of experience in the relevant field, REC provides guaranteed results to the students.
+Over the course of his teaching career, Raushan Kumar taught thousands of students all over India and helped a massive number of students to crack the toughest entrance examinations in the country—IIT-JEE and NEET.
+"
+            android:fontFamily="@font/maven_pro"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="No Result, No Fees."
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/maven_pro"
+            android:layout_margin="13dp"
+            android:text="Education has become a business for most of the educational institutes and organizations today. The standard and quality of the education have become poor, because a higher number of institutes do not have quality teachers. These institutes are seeing education as a way of making money, rather than conveying knowledge.
+In such a scenario, Raushan Edu Care (REC) is working towards giving a whole new perspective and right direction to the education. We guarantee the success by teaching with the mantra of “No Result, No Fees.”
+Almost every IIT-JEE and NEET coaching institute in Jaipur and all around the country is crowded with hundreds of students. But the thing is that all of them have a poor success rate of only 2%. Many are failing to even achieve the mere 2% success.
+That’s where the role of REC comes into the play. Where other coaching institutes have only 2% success rate, our success rate is around 50 to 60%. This is many times higher than the so-called best IIT-JEE and NEET coaching institutes today.
+
+
+"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="A result-driven institute for IIT-JEE and NEET"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Raushan Edu Care (REC) has a team of highly experienced and dedicated faculties in place which remains available and committed to solve the doubts and questions of students 24x7. Time is never an excuse. Good results are what we care about.
+Our teachers provide proper training and coaching to prepare the students for every question that may show on the question papers. Regular mock tests and exams are conducted to analyze the results and preparation-level of each student.
+Before selecting the students and preparing them for these tough exams, our team of faculties take a demo session of the new students and provide them proper guidance and training for a few days. An entrance exam is conducted after the teaching and training sessions to shortlist the students. Our teachers then start working hard and get committed to prepare these shortlisted students for the engineering and medical entrance exams.
+
+"
+            android:fontFamily="@font/maven_pro"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="
+A message for all the parents
+"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/maven_pro"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/maven_pro"
+            android:layout_margin="10dp"
+            android:text="It is our promise to all the parents and guardians that we give our best to make sure that all the students get selected for the IIT and NEET colleges. When any student is selected by us, we give a guarantee/selection card to the parents of that student. This is to show that we are a trusted and credible coaching institute in Jaipur.
+Our main courses include REC-NEET-50 and REC-JEE-50. Both of these are high standard courses meant to pave the way to success for our students. We invite and welcome all the aspirants of IIT and NEET to start the journey to success with us and create a history.
+
+"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="What makes REC the best IIT and NEET coaching institute in Jaipur?"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/maven_pro"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="1.A very high rate of success, i.e. 50-60%. Other coaching institutes are far behind us with a success rate of mere 2%."
+            android:layout_margin="10dp"
+            android:fontFamily="@font/maven_pro"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="2.A guarantee card that shows that we are a trusted and genuine coaching centre for IIT-JEE and NEET."
+            android:layout_margin="10dp"
+            android:fontFamily="@font/maven_pro"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="3.No result, no fees."
+            android:layout_margin="10dp"
+            android:fontFamily="@font/maven_pro"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="4.Apart from providing the right education and guaranteed results, we give special attention to the students on an individual basis. This helps in ensuring that the students stay focused to studies only and their focus doesn’t get diverted."
+            android:layout_margin="10dp"
+            android:fontFamily="@font/maven_pro"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

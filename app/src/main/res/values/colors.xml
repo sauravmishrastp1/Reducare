@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#030749</color>
+    <color name="colorPrimaryDark">#030749</color>
+    <color name="colorAccent">#FFA000</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#FFA000</color>
+    <color name="grey">#E9E9E9</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="player_background">#4a4a4a</color>
+    <color name="holo_light_primary">#000000</color>
+    <color name="background_holo_light">#000000</color>
+    <color name="white_light">#FFFFFF</color>
+    <color name="selectablecolor">#333333</color>
+    <color name="default_screen_bg">#f9f9f9</color>
+    <color name="rounded_container_bg">#222222</color>
+    <color name="rounded_container_border">#3b3f44</color>
+    <color name="light_gray_header_color">#646663</color>
+    <color name="marooncolor">#7F0000</color>
+</resources>
